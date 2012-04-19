@@ -21,7 +21,8 @@ namespace Atos.Web.Mobile.Trends
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.IgnoreRoute("{file}.html");
+            routes.Ignore("phonegap.html/{*pathInfo}");
+            //routes.IgnoreRoute("{file}.html");
             
             routes.MapRoute(
                 "Default", // Route name
